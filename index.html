@@ -90,8 +90,7 @@
       border: 0 !important;
     }
   </style>
-  <script type="module" crossorigin src="/assets/index-DV-1WFZA.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-7YSu33UF.css">
+  <script type="module" src="/src/main.jsx"></script>
 </head>
 
 <body>
@@ -242,6 +241,17 @@
   </noscript>
 
   <div id="root"></div>
-<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4777065dd13c48e0a7b871eabc001aff"}'></script><!-- Cloudflare Pages Analytics --></body>
+  <!-- Cloudflare Pages Analytics -->
+  <script>
+    if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+      const script = document.createElement('script');
+      script.defer = true;
+      script.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+      script.setAttribute('data-cf-beacon', '{"token": "4777065dd13c48e0a7b871eabc001aff"}');
+      document.body.appendChild(script);
+    }
+  </script>
+  <!-- Cloudflare Pages Analytics -->
+</body>
 
 </html>
